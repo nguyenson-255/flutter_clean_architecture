@@ -10,19 +10,19 @@ void main() {
     initialRoute: '/home',
     routes: {
       '/loading': (context) => Loading(),
-      '/home': (context) => NumberTrival(),
+      '/home': (context) => NumberTrivalState(),
     },
   ));
 }
 
-class NumberTrival extends StatefulWidget {
-  const NumberTrival({super.key});
+class NumberTrivalState extends StatefulWidget {
+  const NumberTrivalState({super.key});
 
   @override
-  State<NumberTrival> createState() => _NumberTrivalState();
+  State<NumberTrivalState> createState() => _NumberTrivalStateState();
 }
 
-class _NumberTrivalState extends State<NumberTrival> {
+class _NumberTrivalStateState extends State<NumberTrivalState> {
   int _numberTrival = 13;
   String title = '13 is asdkflkajdsfjasdjflasjdf';
   var data;
