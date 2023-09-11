@@ -31,7 +31,7 @@ class _LoadingState extends State<Loading> {
 
     String data = response.body;
 
-    // son nson1
+    // son nson
     Navigator.pop(context,[data, int.parse(data.split(' ')[0])]);
 
   }
