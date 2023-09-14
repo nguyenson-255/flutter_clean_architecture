@@ -1,6 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'dart:ffi';
 
+
 class NumberTrival extends Equatable{
 
   final String text;
@@ -9,6 +10,6 @@ class NumberTrival extends Equatable{
   NumberTrival({required this.text, required this.number});
   
   @override
-  List<Object?> get props => throw UnimplementedError();
+  List<Object?> get props => [text,number];
 
 }
