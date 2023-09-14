@@ -18,6 +18,9 @@ void main() {
   late GetNumberTrival usecase;
   late MockNumberTrivalReponsitory mockNumberTriviaRepository;
 
+
+  late
+
   final int tNumber = 1;
   final NumberTrival tNumberTrivia = NumberTrival(number: 1, text: 'test');
   
@@ -37,7 +40,7 @@ void main() {
       when(mockNumberTriviaRepository.getNumberTrival(any))
           .thenAnswer((_) async => Right(tNumberTrivia));
       // The "act" phase of the test. Call the not-yet-existent method.
-      final result = await usecase.excute(number: tNumber);
+      final result = await usecase(Params(number: tNumber));
       // UseCase should simply return whatever was returned from the Repository
 
       expect(result, Right(tNumberTrivia));
