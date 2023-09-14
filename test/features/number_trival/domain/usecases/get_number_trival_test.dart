@@ -1,4 +1,3 @@
-import 'package:cleancodepart1/core/error/failures.dart';
 import 'package:cleancodepart1/features/number_trival/domain/entities/NumberTrival.dart';
 import 'package:cleancodepart1/features/number_trival/domain/reponsitories/NumberTrivalReponsitory.dart';
 import 'package:cleancodepart1/features/number_trival/domain/usecases/get_number_trival.dart';

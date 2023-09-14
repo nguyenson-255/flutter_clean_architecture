@@ -4,7 +4,6 @@ import 'package:cleancodepart1/features/number_trival/domain/entities/NumberTriv
 import 'package:cleancodepart1/features/number_trival/domain/reponsitories/NumberTrivalReponsitory.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-import 'package:meta/meta.dart';
 
 class GetNumberTrival implements UseCase<NumberTrival,Params>{
   final NumberTrivalReponsitory numberTrivalReponsitory;
